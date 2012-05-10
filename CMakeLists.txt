@@ -71,6 +71,12 @@ cxx_library(gtest "${cxx_strict}" src/gtest-all.cc)
 cxx_library(gtest_main "${cxx_strict}" src/gtest_main.cc)
 target_link_libraries(gtest_main gtest)
 
+install (TARGETS gtest gtest_main DESTINATION lib)
+install (DIRECTORY include/gtest/
+         DESTINATION include/gtest/
+         FILES_MATCHING PATTERN "*.h"
+)
+
 ########################################################################
 #
 # Samples on how to link user tests with gtest or gtest_main.
