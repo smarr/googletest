@@ -9,7 +9,7 @@
 // notice, this list of conditions and the following disclaimer.
 //     * Redistributions in binary form must reproduce the above
 // copyright notice, this list of conditions and the following disclaimer
-// in the documentation and/or other materials provided with the
+// in the documentation and/or other materials provid with the
 // distribution.
 //     * Neither the name of Google Inc. nor the names of its
 // contributors may be used to endorse or promote products derived from
@@ -36,7 +36,6 @@
 
 // This line ensures that gtest.h can be compiled on its own, even
 // when it's fused.
-#include "gtest/gtest.h"
 
 // The following lines pull in the real gtest *.cc files.
 #include "src/gtest.cc"
