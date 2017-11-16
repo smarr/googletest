@@ -144,7 +144,7 @@ class linked_ptr {
 
   // Copy an existing linked_ptr<>, adding ourselves to the list of references.
   template <typename U> linked_ptr(linked_ptr<U> const& ptr) { copy(&ptr); }
-  linked_ptr(linked_ptr const& ptr) {  // NOLINT
+  linked_ptr(linked_ptr const& ptr) : link_() {  // NOLINT
     assert(&ptr != this);
     copy(&ptr);
   }
